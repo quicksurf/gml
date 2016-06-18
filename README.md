@@ -1,11 +1,12 @@
 # Gml - The Generic Monitor Log
 
-I wrote this gem because I wanted to have a super simple super easy way to log events and messages within Ruby code
-that was simple, clean, and could be used in a stand-alone fashion without any dependencies.
+I wrote this gem because I wanted to have a super simple super easy way to log events and
+messages within Ruby code that was simple, clean, and could be used in a stand-alone
+fashion without any dependencies.
 
-I've looked at other Ruby logging options and they either had dependencies on things that I didn't want to install,
-or part of a whole bigger framework that had to be installed in order to use, or they where just really way more
-complex than what I needed and wanted.
+I've looked at other Ruby logging options and they either had dependencies on things that
+I didn't want to install, or part of a whole bigger framework that had to be installed in
+order to use, or they where just really way more complex than what I needed and wanted.
 
 So, I decided that perhaps I should roll my own.
 
@@ -29,7 +30,7 @@ Or install it yourself as:
 
 Usage is fairly straightforward.
 
-### Basic Use
+### Basic Usage
 
     require "gml"
 
@@ -43,7 +44,8 @@ Usage is fairly straightforward.
 
 Optionally, there is a `log` method that is an alias of `log_info`.
 
-The default logging level is info, so panics and info would be logged, but not verbose, debug, or trace.
+The default logging level is info, so panics and info would be logged, but not verbose,
+debug, or trace.
 
 ### More Advanced Usage
 
@@ -71,22 +73,23 @@ The default logging level is info, so panics and info would be logged, but not v
     #
     logger.options[:console] = STDOUT
 
-You kind of get the point.  You can set any of the keys found in `Gml::DEFAULT_OPTIONS` either as a hash at instantiation,
-or you can set them via the `options` afterwards.
+You kind of get the point.  You can set any of the keys found in `Gml::DEFAULT_OPTIONS`
+either as a hash at instantiation, or you can set them via the `options` afterwards.
 
 The supported log levels (in order of more logging) are:
 
-1) LOG_LEVEL_OFF - Turn logging off
-2) LOG_LEVEL_PANIC - Don't log anything but panics
-3) LOG_LEVEL_INFO - Log generic info type messages
-4) LOG_LEVEL_VERBOSE - Log some more verbose stuff
-5) LOG_LEVEL_DEBUG - Log debugging type stuff
-6) LOG_LEVEL_TRACE - Log tracing type stuff
+1. `LOG_LEVEL_OFF` - Turn logging off
+2. `LOG_LEVEL_PANIC` - Don't log anything but panics
+3. `LOG_LEVEL_INFO` - Log generic info type messages
+4. `LOG_LEVEL_VERBOSE` - Log some more verbose stuff
+5. `LOG_LEVEL_DEBUG` - Log debugging type stuff
+6. `LOG_LEVEL_TRACE` - Log tracing type stuff
 
 
 ### Typical Usage
 
-At least how I use generally use gml, though it's really pretty much up to you how you want to use it.
+At least how I use generally use gml, though it's really pretty much up to you how you
+want to use it.
 
     require "gml"
 
@@ -122,21 +125,23 @@ You get the point.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive
-prompt that will allow you to experiment.
+After checking out the repo, run `bin/setup` to install dependencies. You can also run
+`bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the
-version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version,
-push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle exec rake install`. To release a
+new version, update the version number in `version.rb`, and then run
+`bundle exec rake release`, which will create a git tag for the version, push git commits
+and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gml. This project is intended to
-be a safe, welcoming space for collaboration, and contributors are expected to adhere to the
-[Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gml.
+This project is intended to be a safe, welcoming space for collaboration, and contributors
+are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org)
+code of conduct.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the
+[MIT License](http://opensource.org/licenses/MIT).
 
