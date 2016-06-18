@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    gml (1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.12)
+  gml!
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.12.5
